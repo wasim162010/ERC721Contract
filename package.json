@@ -1,0 +1,24 @@
+{
+  "name": "DbiliaAssignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasim162010/DbiliaAssignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wasim162010/DbiliaAssignment/issues"
+  },
+  "homepage": "https://github.com/wasim162010/DbiliaAssignment#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "chai": "^4.3.4"
+  }
+}
