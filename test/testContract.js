@@ -1,6 +1,6 @@
 const { assert } = require('chai')
 
-const instance = artifacts.require('./DbeliaMintNFT.sol')
+const instance = artifacts.require('./MintNFT.sol')
 
 require('chai')
   .use(require('chai-as-promised'))

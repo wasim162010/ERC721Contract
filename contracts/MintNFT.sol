@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract DbeliaMintNFT is ERC721, Ownable {
+contract MintNFT is ERC721, Ownable {
     
     
     using Strings for uint256;
@@ -41,11 +41,19 @@ contract DbeliaMintNFT is ERC721, Ownable {
         require(_exists(tokenId), "ERC721Metadata: URI set of nonexistent token");
         _tokenURIs[tokenId] = _tokenURI;
     }
+
+    /*
+
+        1. If user pays in USD, then contract user will mint the NFT[mintWithUSD()]
+        2. If user pays in ETH, then user can mint the NFT[ mintWithETH() ]
+
+
+    */
     
     
     function mintWithUSD(address userId, string memory  cardId, string memory edition, string memory tokenURI) public returns(uint256) {
         
-        require(msg.sender == _owner,"only Dbilia can mint"); //dbilia is minting on behalf of user.
+        require(msg.sender == _owner,"only Dbilia can mint"); //contract owner wl be minting the NFT.
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
         _tokenOwner[userId] = newItemId;

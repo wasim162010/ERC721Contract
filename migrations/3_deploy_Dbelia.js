@@ -1,5 +1,5 @@
-const DbeliaMintNFT = artifacts.require("DbeliaMintNFT");
+const MintNFT = artifacts.require("MintNFT");
 
 module.exports = function (deployer) {
-  deployer.deploy(DbeliaMintNFT,"DbeliaMintNFT","DBNFT");
+  deployer.deploy(MintNFT,"MintNFT","WBNFT");
 };
