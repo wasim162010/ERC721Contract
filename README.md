@@ -4,6 +4,6 @@
 
 # To create the smart contract, OpenZeppelin linrary has been used.
 
-# Few screenshots have been added in file 'Few screenshots.docx'.
+
 
 
